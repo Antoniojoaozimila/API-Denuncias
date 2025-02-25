@@ -1,0 +1,21 @@
+{
+    "description": "SISTEMA DE DENUNCIA DE DESPERDICIO DE AGUA POTAVEL",
+    "authors": [
+        {
+            "name": "Cripton Baloi & Antonio Zimila",
+            "email": "antoniojoaozimila@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Core\\":"core",
+            "App\\": "app",
+            "Sts\\": "app/sts"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "dompdf/dompdf": "^3.0",
+        "firebase/php-jwt": "^6.11"
+    }
+}

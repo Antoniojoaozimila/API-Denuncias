@@ -1,0 +1,13 @@
+#TUDO QUE TIVER ASTERISTICO E UM COMENTARIO
+
+
+#Ativa o mecanismo de reescrita de URL.
+RewriteEngine On
+
+#Configuracoes que verificam se o arquivo requisitado não corresponde a um diretório, arquivo, ou link existente.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+#Captura o caminho da URL requisitada e passa como parâmetro url para o arquivo index.php.
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]

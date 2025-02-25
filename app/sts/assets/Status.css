@@ -1,0 +1,22 @@
+.status-label {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.status-aberta {
+    background-color: red;
+    color: white;
+}
+.status-recebido {
+    background-color: blue;
+    color: white;
+}
+.status-resolvido {
+    background-color: green;
+    color: white;
+}
+.status-andamento {
+    background-color: orange;
+    color: white;
+}

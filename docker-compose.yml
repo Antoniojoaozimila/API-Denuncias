@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    environment:
+      - DB_HOST=135.181.249.37
+      - DB_USER=root
+      - DB_PASSWORD=Maputo2023@#
+      - DB_NAME=projectofinal-curso
